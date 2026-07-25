@@ -1,5 +1,44 @@
-// ShriVatsaDarbar Website
-// JavaScript will be added here later.
+function openOrderForm(product) {
+    document.getElementById("orderPopup").style.display = "flex";
+    document.getElementById("productName").value = product;
+}
 
-// Website Loaded
-console.log("ShriVatsaDarbar Website Loaded Successfully");
+function closeOrderForm() {
+    document.getElementById("orderPopup").style.display = "none";
+}
+
+function sendWhatsApp() {
+
+    let name = document.getElementById("customerName").value;
+    let phone = document.getElementById("customerPhone").value;
+    let email = document.getElementById("customerEmail").value;
+    let product = document.getElementById("productName").value;
+    let size = document.getElementById("productSize").value;
+    let message = document.getElementById("customerMessage").value;
+
+    if(name==="" || phone==="" || size==="Select Size"){
+        alert("Please fill Name, Mobile Number and Size.");
+        return;
+    }
+
+    let text =
+`🙏 Jai Shri Krishna
+
+Name: ${name}
+Phone: ${phone}
+Email: ${email}
+
+Product: ${product}
+Size: ${size}
+
+Message: ${message}
+
+Please share the price and delivery details.`;
+
+    window.open(
+        "https://wa.me/918826196544?text=" + encodeURIComponent(text),
+        "_blank"
+    );
+
+    closeOrderForm();
+}
