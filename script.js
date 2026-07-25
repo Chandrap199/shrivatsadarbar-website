@@ -14,6 +14,7 @@ function sendWhatsApp() {
     let email = document.getElementById("customerEmail").value;
     let product = document.getElementById("productName").value;
     let size = document.getElementById("productSize").value;
+    let address = document.getElementById("customerAddress").value;
     let message = document.getElementById("customerMessage").value;
 
     if(name==="" || phone==="" || size==="Select Size"){
@@ -29,9 +30,13 @@ Phone: ${phone}
 Email: ${email}
 
 Product: ${product}
-Size: ${size}
+📏 Size: ${size}
 
-Message: ${message}
+📍 Delivery Address:
+${address}
+
+💬 Customer Message:
+${message}
 
 Please share the price and delivery details.`;
 
