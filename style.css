@@ -126,8 +126,68 @@ nav a{
 
 }
 .product-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+    padding:30px;
+}
+
+.product-card{
+    background:#111;
+    border:2px solid #d4af37;
+    border-radius:18px;
+    padding:18px;
     display:flex;
-    justify-content:center;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+    transition:0.3s;
+    box-shadow:0 8px 20px rgba(0,0,0,.3);
+}
+
+.product-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 15px 35px rgba(212,175,55,.35);
+}
+
+.product-card img{
+    width:100%;
+    height:280px;
+    object-fit:contain;
+    background:#fff;
+    padding:10px;
+    border-radius:12px;
+}
+
+.product-card h3{
+    margin:18px 0 10px;
+    min-height:55px;
+    color:#FFD54F;
+    font-size:24px;
+}
+
+.product-card p{
+    min-height:60px;
+    color:#fff;
+    font-size:18px;
+    line-height:1.5;
+}
+
+.product-card .btn{
+    margin-top:auto;
+    width:100%;
+    padding:14px;
+    border-radius:30px;
+    background:#d4af37;
+    color:#111;
+    font-weight:bold;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.product-card .btn:hover{
+    background:#FFD54F;
+    transform:scale(1.05);
 }
 
 .product-card{
