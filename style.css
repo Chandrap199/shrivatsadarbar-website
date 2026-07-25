@@ -118,3 +118,31 @@ nav a{
 }
 
 }
+.product-grid{
+    display:flex;
+    justify-content:center;
+}
+
+.product-card{
+    width:320px;
+    background:#151515;
+    border:1px solid #d4af37;
+    border-radius:15px;
+    padding:20px;
+}
+
+.product-card img{
+    width:100%;
+    border-radius:10px;
+    margin-bottom:20px;
+}
+
+.product-card h3{
+    color:#d4af37;
+    margin-bottom:15px;
+}
+
+.product-card p{
+    color:#ddd;
+    margin-bottom:20px;
+}
