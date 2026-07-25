@@ -17,10 +17,10 @@ function sendWhatsApp() {
     let address = document.getElementById("customerAddress").value;
     let message = document.getElementById("customerMessage").value;
 
-    if(name==="" || phone==="" || size==="Select Size"){
-        alert("Please fill Name, Mobile Number and Size.");
-        return;
-    }
+    if(name==="" || phone==="" || size==="Select Size" || address===""){
+    alert("Please fill Name, Mobile Number, Size and Delivery Address.");
+    return;
+}
 
     let text =
 `🙏 Jai Shri Krishna
