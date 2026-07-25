@@ -1,94 +1,72 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+/* Products */
+
+#products{
+    background:#111;
+    text-align:center;
 }
 
-body{
-    font-family:Arial,Helvetica,sans-serif;
-    background:#0b0b0b;
-    color:#fff;
-    line-height:1.6;
-}
-
-header{
-    position:fixed;
-    top:0;
-    width:100%;
-    background:rgba(0,0,0,.85);
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:18px 8%;
-    z-index:1000;
-    border-bottom:1px solid rgba(212,175,55,.3);
-}
-
-.logo{
-    font-size:28px;
-    font-weight:bold;
+#products h2{
     color:#d4af37;
+    font-size:40px;
+    margin-bottom:40px;
 }
 
-nav a{
-    color:#fff;
-    text-decoration:none;
-    margin-left:25px;
-    transition:.3s;
-}
-
-nav a:hover{
-    color:#d4af37;
-}
-
-.hero{
-    height:100vh;
+.product-grid{
     display:flex;
     justify-content:center;
-    align-items:center;
-    text-align:center;
-    padding:20px;
-    background:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7));
+    flex-wrap:wrap;
+    gap:30px;
 }
 
-.hero h1{
-    font-size:56px;
-    color:#d4af37;
+.product-card{
+    background:#1b1b1b;
+    border:1px solid #d4af37;
+    border-radius:15px;
+    padding:20px;
+    width:320px;
+    transition:0.3s;
+}
+
+.product-card:hover{
+    transform:translateY(-8px);
+}
+
+.product-card img{
+    width:100%;
+    border-radius:10px;
     margin-bottom:20px;
 }
 
-.hero p{
-    max-width:700px;
-    margin:auto;
-    color:#ddd;
-    font-size:20px;
-    margin-bottom:35px;
-}
-
-.hero-btn{
-    display:inline-block;
-    background:#d4af37;
-    color:#000;
-    padding:15px 35px;
-    border-radius:40px;
-    text-decoration:none;
-    font-weight:bold;
-}
-
-section{
-    padding:90px 8%;
-}
-
-.section-title{
-    text-align:center;
+.product-card h3{
     color:#d4af37;
-    margin-bottom:50px;
-    font-size:40px;
+    margin-bottom:10px;
 }
 
-footer{
-    background:#111;
-    text-align:center;
-    padding:30px;
-    color:#aaa;
+.product-card p{
+    margin-bottom:20px;
+    color:#ddd;
+}
+
+@media(max-width:768px){
+
+header{
+    flex-direction:column;
+}
+
+nav{
+    margin-top:15px;
+}
+
+.hero h1{
+    font-size:34px;
+}
+
+.hero p{
+    font-size:18px;
+}
+
+.product-card{
+    width:100%;
+}
+
 }
