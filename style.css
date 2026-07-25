@@ -315,3 +315,46 @@ nav a{
     cursor:pointer;
     align-self:flex-end;
 }
+/* ABOUT SECTION */
+
+.about{
+    padding:80px 10%;
+    background:#111;
+    color:#fff;
+    text-align:center;
+}
+
+.about h2{
+    color:#FFD700;
+    font-size:40px;
+    margin-bottom:25px;
+}
+
+.about p{
+    max-width:900px;
+    margin:15px auto;
+    line-height:1.8;
+    color:#ddd;
+    font-size:18px;
+}
+
+.about-features{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+    margin-top:50px;
+}
+
+.feature{
+    background:#1b1b1b;
+    border:2px solid #FFD700;
+    border-radius:15px;
+    padding:30px 20px;
+    font-size:18px;
+    transition:.3s;
+}
+
+.feature:hover{
+    transform:translateY(-8px);
+    box-shadow:0 0 20px rgba(255,215,0,.4);
+}
