@@ -483,3 +483,38 @@ nav a{
     background:#fff;
     transform:scale(1.05);
 }
+.social-section{
+    background:#111;
+    text-align:center;
+    padding:50px 20px;
+    border-top:2px solid #d4af37;
+}
+
+.social-section h2{
+    color:#d4af37;
+    margin-bottom:30px;
+}
+
+.social-links{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+.social-links a{
+    text-decoration:none;
+    color:white;
+    background:#1b1b1b;
+    border:2px solid #d4af37;
+    padding:12px 20px;
+    border-radius:30px;
+    transition:.3s;
+    font-weight:bold;
+}
+
+.social-links a:hover{
+    background:#d4af37;
+    color:#000;
+    transform:translateY(-3px);
+}
