@@ -948,3 +948,31 @@ section h2{
 }
 
 /* END OF FILE */
+/* ===========================
+   ABOUT PAGE HERO
+=========================== */
+
+.page-hero{
+    background: linear-gradient(rgba(106,27,27,.75), rgba(106,27,27,.75)),
+    none;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 100px 20px;
+    color: #fff;
+}
+
+.page-hero-content{
+    max-width:800px;
+    margin:auto;
+}
+
+.page-hero h1{
+    font-size:48px;
+    margin-bottom:20px;
+}
+
+.page-hero p{
+    font-size:20px;
+    line-height:1.8;
+}
