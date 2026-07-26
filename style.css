@@ -666,3 +666,285 @@ footer p{
     cursor:pointer;
 
 }
+/*==================================================
+PART 3
+RESPONSIVE • ANIMATIONS • UTILITIES
+==================================================*/
+
+/* IMAGE HOVER */
+
+.product-card img{
+    transition:.4s ease;
+}
+
+.product-card:hover img{
+    transform:scale(1.05);
+}
+
+/* SMOOTH TRANSITIONS */
+
+a,
+button,
+.btn,
+.feature,
+.review-card,
+.contact-card,
+.product-card{
+    transition:all .35s ease;
+}
+
+/* FADE ANIMATION */
+
+.fade-up{
+    opacity:0;
+    transform:translateY(40px);
+    animation:fadeUp .8s ease forwards;
+}
+
+@keyframes fadeUp{
+
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+/* FLOAT ANIMATION */
+
+@keyframes floating{
+
+    0%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-8px);
+    }
+
+    100%{
+        transform:translateY(0);
+    }
+
+}
+
+.hero img{
+
+    animation:floating 4s ease-in-out infinite;
+
+}
+
+/* GOLD DIVIDER */
+
+.divider{
+
+    width:90px;
+    height:4px;
+    background:var(--primary);
+    margin:18px auto 35px;
+    border-radius:50px;
+
+}
+
+/* SECTION TITLE */
+
+.section-title{
+
+    text-align:center;
+    color:var(--primary);
+    font-size:42px;
+    font-weight:700;
+
+}
+
+.section-subtitle{
+
+    text-align:center;
+    color:var(--text-light);
+    max-width:760px;
+    margin:20px auto 45px;
+
+}
+
+/* SELECTION */
+
+::selection{
+
+    background:var(--primary);
+    color:#111;
+
+}
+
+/* REMOVE IMAGE DRAG */
+
+img{
+
+    user-select:none;
+    -webkit-user-drag:none;
+
+}
+
+/* RESPONSIVE */
+
+@media(max-width:992px){
+
+header{
+
+    padding:15px 5%;
+
+}
+
+.hero h1{
+
+    font-size:46px;
+
+}
+
+section{
+
+    padding:75px 5%;
+
+}
+
+}
+
+@media(max-width:768px){
+
+header{
+
+    flex-direction:column;
+    gap:15px;
+
+}
+
+nav{
+
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+
+}
+
+.hero{
+
+    padding-top:180px;
+
+}
+
+.hero h1{
+
+    font-size:34px;
+
+}
+
+.hero p{
+
+    font-size:17px;
+
+}
+
+.hero-buttons{
+
+    flex-direction:column;
+    align-items:center;
+
+}
+
+.hero-buttons .btn{
+
+    width:250px;
+
+}
+
+.logo span{
+
+    font-size:22px;
+
+}
+
+section h2{
+
+    font-size:32px;
+
+}
+
+.product-grid,
+.about-features,
+.review-grid,
+.contact-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.social-links{
+
+    flex-direction:column;
+    align-items:center;
+
+}
+
+.footer-links{
+
+    flex-direction:column;
+    gap:10px;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.hero h1{
+
+    font-size:28px;
+
+}
+
+.hero p{
+
+    font-size:16px;
+
+}
+
+.btn{
+
+    width:100%;
+
+}
+
+.logo img{
+
+    width:55px;
+    height:65px;
+
+}
+
+.logo span{
+
+    font-size:20px;
+
+}
+
+.floating-whatsapp{
+
+    width:58px;
+    height:58px;
+    font-size:26px;
+
+}
+
+.popup-content{
+
+    padding:22px;
+
+}
+
+}
+
+/* END OF FILE */
