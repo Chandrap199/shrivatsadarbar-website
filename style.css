@@ -25,9 +25,18 @@ header{
 }
 
 .logo{
-    font-size:30px;
+    display:flex;
+    align-items:center;
+    gap:12px;
+    color:#f5b800;
+    font-size:2rem;
     font-weight:bold;
-    color:#d4af37;
+}
+
+.logo img{
+    width:55px;
+    height:55px;
+    object-fit:contain;
 }
 
 nav a{
