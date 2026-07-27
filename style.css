@@ -1351,21 +1351,13 @@ PREMIUM FOOTER
     color:#222;
 }
 
-.premium-page-hero{
-    position:relative;
-    padding:140px 20px 90px;
-    overflow:hidden;
-
-    background:
-        linear-gradient(135deg,#fdf8ef,#fff,#f8f2e6) !important;
-
-    background-image:none !important;
-
-    color:#222;
-}
-
 .page-hero-overlay{
-    ...
+    position:absolute;
+    inset:0;
+    background:
+        radial-gradient(circle at top right,
+        rgba(201,168,83,.18), transparent 45%);
+    pointer-events:none;
 }
 
 .page-hero-content{
@@ -1374,7 +1366,13 @@ PREMIUM FOOTER
     max-width:760px;
     margin:auto;
 }
+.premium-page-hero h1{
+    color:#ffffff;
+}
 
+.premium-page-hero p{
+    color:#e5e5e5;
+}
 .page-tag{
     display:inline-block;
     background:#fff;
