@@ -1346,8 +1346,6 @@ PREMIUM FOOTER
     background:
         linear-gradient(135deg,#fdf8ef,#fff,#f8f2e6) !important;
 
-    background-image:none !important;
-
     color:#222;
 }
 
@@ -1367,11 +1365,11 @@ PREMIUM FOOTER
     margin:auto;
 }
 .premium-page-hero h1{
-    color:#ffffff;
+    color:#222;
 }
 
 .premium-page-hero p{
-    color:#e5e5e5;
+    color:#555;
 }
 .page-tag{
     display:inline-block;
