@@ -1420,6 +1420,7 @@ PREMIUM FOOTER
     font-weight:600;
     font-size:1.05rem;
     position:relative;
+    color:#222;
 }
 
 .faq-item summary::-webkit-details-marker{
