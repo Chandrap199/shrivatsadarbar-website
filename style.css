@@ -1318,3 +1318,18 @@ PREMIUM FOOTER
 .footer-dropdown:hover .dropdown-toggle span {
     transform: rotate(180deg);
 }
+/* Mobile Footer Dropdown */
+
+@media (max-width: 768px) {
+
+    .footer-dropdown.active .dropdown-menu {
+        max-height: 300px;
+        opacity: 1;
+        margin-top: 10px;
+    }
+
+    .footer-dropdown.active .dropdown-toggle span {
+        transform: rotate(180deg);
+    }
+
+}
