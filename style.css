@@ -953,8 +953,9 @@ section h2{
 =========================== */
 
 .page-hero{
-    background: linear-gradient(rgba(106,27,27,.75), rgba(106,27,27,.75)),
-    none;
+    background:
+linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.65)),
+url("images/poster.png");
     background-size: cover;
     background-position: center;
     text-align: center;
