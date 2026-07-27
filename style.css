@@ -1280,3 +1280,41 @@ PREMIUM FOOTER
 }
 
 }
+/* =========================
+   Footer Dropdown
+========================= */
+
+.footer-dropdown {
+    position: relative;
+}
+
+.dropdown-toggle {
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dropdown-toggle span {
+    font-size: 12px;
+    transition: transform 0.3s ease;
+}
+
+.dropdown-menu {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.35s ease;
+    margin-top: 0;
+}
+
+.footer-dropdown:hover .dropdown-menu {
+    max-height: 300px;
+    opacity: 1;
+    margin-top: 10px;
+}
+
+.footer-dropdown:hover .dropdown-toggle span {
+    transform: rotate(180deg);
+}
