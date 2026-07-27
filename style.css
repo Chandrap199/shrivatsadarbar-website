@@ -976,3 +976,184 @@ section h2{
     font-size:20px;
     line-height:1.8;
 }
+/*=========================================
+ABOUT PAGE - CONTENT & FEATURES
+=========================================*/
+
+.container{
+    width:100%;
+    max-width:1200px;
+    margin:auto;
+}
+
+.about-content{
+    background:#101010;
+}
+
+.about-content h2{
+    color:var(--primary);
+    font-size:36px;
+    margin-bottom:18px;
+    text-align:left;
+}
+
+.about-content p{
+    color:var(--text-light);
+    font-size:17px;
+    line-height:1.9;
+    margin-bottom:35px;
+}
+
+.why-us{
+    background:#090909;
+}
+
+.feature-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+    margin-top:45px;
+}
+
+.feature-card{
+    background:linear-gradient(180deg,#181818,#101010);
+    border:1px solid var(--border);
+    border-radius:20px;
+    padding:35px 28px;
+    text-align:center;
+    transition:all .35s ease;
+    box-shadow:var(--shadow);
+}
+
+.feature-card:hover{
+    transform:translateY(-8px);
+    border-color:var(--primary);
+    box-shadow:0 20px 40px rgba(212,175,55,.18);
+}
+
+.feature-card h3{
+    color:var(--primary);
+    font-size:22px;
+    margin-bottom:15px;
+}
+
+.feature-card p{
+    color:var(--text-light);
+    font-size:16px;
+    line-height:1.8;
+}
+
+.section-intro{
+    max-width:760px;
+    margin:0 auto 45px;
+    text-align:center;
+    color:var(--text-light);
+    font-size:18px;
+    line-height:1.8;
+}
+/*=========================================
+ABOUT PAGE - COLLECTION, PROMISE & CTA
+=========================================*/
+
+.collection-preview{
+    background:#111;
+}
+
+.collection-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+    margin-top:45px;
+}
+
+.collection-card{
+    background:linear-gradient(180deg,#181818,#111);
+    border:1px solid var(--border);
+    border-radius:20px;
+    padding:30px 25px;
+    text-align:center;
+    transition:all .35s ease;
+    box-shadow:var(--shadow);
+}
+
+.collection-card:hover{
+    transform:translateY(-8px);
+    border-color:var(--primary);
+    box-shadow:0 20px 40px rgba(212,175,55,.18);
+}
+
+.collection-card h3{
+    color:var(--primary);
+    font-size:22px;
+    margin-bottom:15px;
+}
+
+.collection-card p{
+    color:var(--text-light);
+    line-height:1.8;
+}
+
+.our-promise{
+    background:#0d0d0d;
+    text-align:center;
+}
+
+.our-promise p{
+    max-width:850px;
+    margin:25px auto 0;
+    color:var(--text-light);
+    line-height:1.9;
+    font-size:17px;
+}
+
+.about-cta{
+    background:linear-gradient(135deg,#1a1200,#3d2b00);
+    text-align:center;
+}
+
+.about-cta h2{
+    color:#fff;
+    margin-bottom:20px;
+}
+
+.about-cta p{
+    max-width:700px;
+    margin:0 auto 35px;
+    color:#f2f2f2;
+    line-height:1.8;
+    font-size:17px;
+}
+
+.about-cta .hero-buttons{
+    justify-content:center;
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+    .about-content h2{
+        font-size:28px;
+        text-align:center;
+    }
+
+    .about-content p{
+        text-align:center;
+        font-size:16px;
+    }
+
+    .collection-grid,
+    .feature-grid{
+        grid-template-columns:1fr;
+    }
+
+    .collection-card,
+    .feature-card{
+        padding:25px 20px;
+    }
+
+    .section-intro{
+        font-size:16px;
+    }
+
+}
