@@ -47,3 +47,20 @@ Please share the price and delivery details.`;
 
     closeOrderForm();
 }
+/* ==========================
+   Footer Dropdown (Mobile)
+========================== */
+
+document.querySelectorAll(".footer-dropdown").forEach((dropdown) => {
+
+    const title = dropdown.querySelector(".dropdown-toggle");
+
+    title.addEventListener("click", function () {
+
+        if (window.innerWidth <= 768) {
+            dropdown.classList.toggle("active");
+        }
+
+    });
+
+});
