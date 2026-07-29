@@ -239,7 +239,7 @@ nav a:hover::after{
             rgba(45,24,16,.28),
             rgba(45,24,16,.28)
         ),
-        url("images/poster.png");
+        url("images/banners/Poster2.png");
 
     background-size: cover;
     background-position: center center;
