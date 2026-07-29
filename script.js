@@ -9,25 +9,31 @@ function closeOrderForm() {
 
 function sendWhatsApp() {
 
-    let name = document.getElementById("customerName").value;
-    let phone = document.getElementById("customerPhone").value;
-    let email = document.getElementById("customerEmail").value;
-    let product = document.getElementById("productName").value;
-    let size = document.getElementById("productSize").value;
-    let address = document.getElementById("customerAddress").value;
-    let message = document.getElementById("customerMessage").value;
+    const name = document.getElementById("customerName").value.trim();
+    const phone = document.getElementById("customerPhone").value.trim();
+    const email = document.getElementById("customerEmail").value.trim();
+    const product = document.getElementById("productName").value;
+    const size = document.getElementById("productSize").value;
+    const address = document.getElementById("customerAddress").value.trim();
+    const message = document.getElementById("customerMessage").value.trim();
 
-    if(name==="" || phone==="" || size==="Select Size" || address===""){
-    alert("Please fill Name, Mobile Number, Size and Delivery Address.");
-    return;
-}
+    if (name === "" || phone === "" || size === "" || address === "") {
+        alert("Please fill Name, Mobile Number, Size and Delivery Address.");
+        return;
+    }
 
-    let text =
+    // Validate Indian mobile number
+    if (!/^[6-9]\d{9}$/.test(phone)) {
+        alert("Please enter a valid 10-digit mobile number.");
+        return;
+    }
+
+    const text =
 `🙏 Jai Shri Krishna
 
 Name: ${name}
 Phone: ${phone}
-Email: ${email}
+${email ? `Email: ${email}` : ""}
 
 Product: ${product}
 📏 Size: ${size}
@@ -35,8 +41,7 @@ Product: ${product}
 📍 Delivery Address:
 ${address}
 
-💬 Customer Message:
-${message}
+${message ? `💬 Customer Message:\n${message}\n` : ""}
 
 Please share the price and delivery details.`;
 
@@ -45,17 +50,37 @@ Please share the price and delivery details.`;
         "_blank"
     );
 
+    // Clear form fields
+    document.getElementById("customerName").value = "";
+    document.getElementById("customerPhone").value = "";
+    document.getElementById("customerEmail").value = "";
+    document.getElementById("productName").value = "";
+    document.getElementById("productSize").value = "";
+    document.getElementById("customerAddress").value = "";
+    document.getElementById("customerMessage").value = "";
+
     closeOrderForm();
 }
+
+// Close popup when clicking outside the popup content
+window.onclick = function (event) {
+    const popup = document.getElementById("orderPopup");
+
+    if (event.target === popup) {
+        closeOrderForm();
+    }
+};
 /* ==========================
    Footer Dropdown (Mobile)
 ========================== */
 
 document.querySelectorAll(".footer-dropdown").forEach((dropdown) => {
 
-    const title = dropdown.querySelector(".dropdown-toggle");
+    const toggle = dropdown.querySelector(".dropdown-toggle");
 
-    title.addEventListener("click", function () {
+    if (!toggle) return;
+
+    toggle.addEventListener("click", () => {
 
         if (window.innerWidth <= 768) {
             dropdown.classList.toggle("active");
