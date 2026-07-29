@@ -216,7 +216,6 @@ nav a:hover::after{
 /* HERO */
 
 .hero {
-.hero {
     justify-content: flex-start;
     text-align: left;
     padding: 110px 8% 80px;
