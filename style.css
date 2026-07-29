@@ -223,16 +223,14 @@ nav a:hover::after{
 /* HERO */
 
 .hero {
+.hero {
+    justify-content: flex-start;
+    text-align: left;
+    padding: 110px 8% 80px;
 
     min-height: 72vh;
-
     display: flex;
-    justify-content: center;
     align-items: center;
-
-    text-align: center;
-
-    padding: 110px 25px 80px;
 
     background:
         linear-gradient(
@@ -242,11 +240,9 @@ nav a:hover::after{
         url("images/banners/Poster2.png");
 
     background-size: cover;
-    background-position: center center;
+    background-position: 75% center;
     background-repeat: no-repeat;
-
 }
-
 .hero-content {
 
     max-width: 760px;
