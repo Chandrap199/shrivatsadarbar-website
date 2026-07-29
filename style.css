@@ -140,12 +140,6 @@ header{
 
 }
 
-.logo{
-    display:flex;
-    align-items:center;
-    gap:12px;
-}
-
 .logo img{
     width:72px;
     height:82px;
